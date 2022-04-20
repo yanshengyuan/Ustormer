@@ -1,0 +1,1770 @@
+nohup: ignoring input
+/data/users/yanshengyuan/Ustormer_Deblur（MDTA+GDFN）
+Namespace(arch='Uformer', att_se=False, batch_size=33, checkpoint=50, dataset='SIDD', embed_dim=32, env='32_0705_1', eval_workers=2, global_skip=False, gpu='0,1,2,3', local_skip=False, lr_initial=0.005, mode='denoising', nepoch=250, norm_layer='nn.LayerNorm', optimizer='adamw', pretrain_weights='./log/Uformer32/models/model_best.pth', resume=False, save_dir='/home/ma-user/work/deNoTr/log', save_images=False, token_embed='linear', token_mlp='leff', train_dir='../GoPro/train', train_ps=128, train_workers=4, val_dir='../GoPro/test', vit_depth=12, vit_dim=256, vit_mlp_dim=512, vit_nheads=8, vit_patch_size=16, vit_share=False, warmup=True, warmup_epochs=3, weight_decay=0.02, win_size=8)
+Now time is :  2022-02-04T21:29:49.171425
+You choose Uformer...
+Using warmup and cosine strategy!
+===> Loading datasets
+Sizeof training set:  2103 , sizeof validation set:  1111
+/data/users/yanshengyuan/anaconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:131: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+Input & GT (PSNR) -->25.6456 dB
+===> Start Epoch 1 End Epoch 250
+
+Evaluation after every 16 Iterations !!!
+
+[Ep 1 it 15	 PSNR SIDD: 20.2614	] ----  [best_Ep_SIDD 1 best_it_SIDD 15 Best_PSNR_SIDD 20.2614] 
+[Ep 1 it 31	 PSNR SIDD: 24.5273	] ----  [best_Ep_SIDD 1 best_it_SIDD 31 Best_PSNR_SIDD 24.5273] 
+[Ep 1 it 47	 PSNR SIDD: 25.1224	] ----  [best_Ep_SIDD 1 best_it_SIDD 47 Best_PSNR_SIDD 25.1224] 
+[Ep 1 it 63	 PSNR SIDD: 25.6052	] ----  [best_Ep_SIDD 1 best_it_SIDD 63 Best_PSNR_SIDD 25.6052] 
+------------------------------------------------------------------
+Epoch: 1	Time: 297.1842	Loss: 4.4230	LearningRate 0.003333
+------------------------------------------------------------------
+MDTA-GDFN Successful!!!
+
+[Ep 2 it 15	 PSNR SIDD: 25.5641	] ----  [best_Ep_SIDD 1 best_it_SIDD 63 Best_PSNR_SIDD 25.6052] 
+[Ep 2 it 31	 PSNR SIDD: 25.6663	] ----  [best_Ep_SIDD 2 best_it_SIDD 31 Best_PSNR_SIDD 25.6663] 
+[Ep 2 it 47	 PSNR SIDD: 25.7047	] ----  [best_Ep_SIDD 2 best_it_SIDD 47 Best_PSNR_SIDD 25.7047] 
+[Ep 2 it 63	 PSNR SIDD: 25.7026	] ----  [best_Ep_SIDD 2 best_it_SIDD 47 Best_PSNR_SIDD 25.7047] 
+------------------------------------------------------------------
+Epoch: 2	Time: 266.2426	Loss: 2.1512	LearningRate 0.005000
+------------------------------------------------------------------
+[Ep 3 it 15	 PSNR SIDD: 25.7184	] ----  [best_Ep_SIDD 3 best_it_SIDD 15 Best_PSNR_SIDD 25.7184] 
+[Ep 3 it 31	 PSNR SIDD: 25.7373	] ----  [best_Ep_SIDD 3 best_it_SIDD 31 Best_PSNR_SIDD 25.7373] 
+[Ep 3 it 47	 PSNR SIDD: 25.7404	] ----  [best_Ep_SIDD 3 best_it_SIDD 47 Best_PSNR_SIDD 25.7404] 
+[Ep 3 it 63	 PSNR SIDD: 25.7449	] ----  [best_Ep_SIDD 3 best_it_SIDD 63 Best_PSNR_SIDD 25.7449] 
+------------------------------------------------------------------
+Epoch: 3	Time: 273.7846	Loss: 2.0538	LearningRate 0.005000
+------------------------------------------------------------------
+/data/users/yanshengyuan/anaconda3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:508: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+[Ep 4 it 15	 PSNR SIDD: 25.7466	] ----  [best_Ep_SIDD 4 best_it_SIDD 15 Best_PSNR_SIDD 25.7466] 
+[Ep 4 it 31	 PSNR SIDD: 25.7404	] ----  [best_Ep_SIDD 4 best_it_SIDD 15 Best_PSNR_SIDD 25.7466] 
+[Ep 4 it 47	 PSNR SIDD: 25.7490	] ----  [best_Ep_SIDD 4 best_it_SIDD 47 Best_PSNR_SIDD 25.7490] 
+[Ep 4 it 63	 PSNR SIDD: 25.7426	] ----  [best_Ep_SIDD 4 best_it_SIDD 47 Best_PSNR_SIDD 25.7490] 
+------------------------------------------------------------------
+Epoch: 4	Time: 267.0233	Loss: 2.0471	LearningRate 0.005000
+------------------------------------------------------------------
+[Ep 5 it 15	 PSNR SIDD: 25.7503	] ----  [best_Ep_SIDD 5 best_it_SIDD 15 Best_PSNR_SIDD 25.7503] 
+[Ep 5 it 31	 PSNR SIDD: 25.7530	] ----  [best_Ep_SIDD 5 best_it_SIDD 31 Best_PSNR_SIDD 25.7530] 
+[Ep 5 it 47	 PSNR SIDD: 25.7540	] ----  [best_Ep_SIDD 5 best_it_SIDD 47 Best_PSNR_SIDD 25.7540] 
+[Ep 5 it 63	 PSNR SIDD: 25.7569	] ----  [best_Ep_SIDD 5 best_it_SIDD 63 Best_PSNR_SIDD 25.7569] 
+------------------------------------------------------------------
+Epoch: 5	Time: 274.1077	Loss: 2.0424	LearningRate 0.004999
+------------------------------------------------------------------
+[Ep 6 it 15	 PSNR SIDD: 25.7583	] ----  [best_Ep_SIDD 6 best_it_SIDD 15 Best_PSNR_SIDD 25.7583] 
+[Ep 6 it 31	 PSNR SIDD: 25.7590	] ----  [best_Ep_SIDD 6 best_it_SIDD 31 Best_PSNR_SIDD 25.7590] 
+[Ep 6 it 47	 PSNR SIDD: 25.7550	] ----  [best_Ep_SIDD 6 best_it_SIDD 31 Best_PSNR_SIDD 25.7590] 
+[Ep 6 it 63	 PSNR SIDD: 25.7518	] ----  [best_Ep_SIDD 6 best_it_SIDD 31 Best_PSNR_SIDD 25.7590] 
+------------------------------------------------------------------
+Epoch: 6	Time: 259.0872	Loss: 1.7739	LearningRate 0.004997
+------------------------------------------------------------------
+[Ep 7 it 15	 PSNR SIDD: 25.7559	] ----  [best_Ep_SIDD 6 best_it_SIDD 31 Best_PSNR_SIDD 25.7590] 
+[Ep 7 it 31	 PSNR SIDD: 25.7434	] ----  [best_Ep_SIDD 6 best_it_SIDD 31 Best_PSNR_SIDD 25.7590] 
+[Ep 7 it 47	 PSNR SIDD: 25.7628	] ----  [best_Ep_SIDD 7 best_it_SIDD 47 Best_PSNR_SIDD 25.7628] 
+[Ep 7 it 63	 PSNR SIDD: 25.7596	] ----  [best_Ep_SIDD 7 best_it_SIDD 47 Best_PSNR_SIDD 25.7628] 
+------------------------------------------------------------------
+Epoch: 7	Time: 262.9410	Loss: 1.8010	LearningRate 0.004995
+------------------------------------------------------------------
+[Ep 8 it 15	 PSNR SIDD: 25.7651	] ----  [best_Ep_SIDD 8 best_it_SIDD 15 Best_PSNR_SIDD 25.7651] 
+[Ep 8 it 31	 PSNR SIDD: 25.7604	] ----  [best_Ep_SIDD 8 best_it_SIDD 15 Best_PSNR_SIDD 25.7651] 
+[Ep 8 it 47	 PSNR SIDD: 25.7591	] ----  [best_Ep_SIDD 8 best_it_SIDD 15 Best_PSNR_SIDD 25.7651] 
+[Ep 8 it 63	 PSNR SIDD: 25.7705	] ----  [best_Ep_SIDD 8 best_it_SIDD 63 Best_PSNR_SIDD 25.7705] 
+------------------------------------------------------------------
+Epoch: 8	Time: 267.1288	Loss: 1.7824	LearningRate 0.004993
+------------------------------------------------------------------
+[Ep 9 it 15	 PSNR SIDD: 25.7676	] ----  [best_Ep_SIDD 8 best_it_SIDD 63 Best_PSNR_SIDD 25.7705] 
+[Ep 9 it 31	 PSNR SIDD: 25.7683	] ----  [best_Ep_SIDD 8 best_it_SIDD 63 Best_PSNR_SIDD 25.7705] 
+[Ep 9 it 47	 PSNR SIDD: 25.7748	] ----  [best_Ep_SIDD 9 best_it_SIDD 47 Best_PSNR_SIDD 25.7748] 
+[Ep 9 it 63	 PSNR SIDD: 25.7728	] ----  [best_Ep_SIDD 9 best_it_SIDD 47 Best_PSNR_SIDD 25.7748] 
+------------------------------------------------------------------
+Epoch: 9	Time: 264.3423	Loss: 1.7891	LearningRate 0.004991
+------------------------------------------------------------------
+[Ep 10 it 15	 PSNR SIDD: 25.7802	] ----  [best_Ep_SIDD 10 best_it_SIDD 15 Best_PSNR_SIDD 25.7802] 
+[Ep 10 it 31	 PSNR SIDD: 25.7647	] ----  [best_Ep_SIDD 10 best_it_SIDD 15 Best_PSNR_SIDD 25.7802] 
+[Ep 10 it 47	 PSNR SIDD: 25.7827	] ----  [best_Ep_SIDD 10 best_it_SIDD 47 Best_PSNR_SIDD 25.7827] 
+[Ep 10 it 63	 PSNR SIDD: 25.7910	] ----  [best_Ep_SIDD 10 best_it_SIDD 63 Best_PSNR_SIDD 25.7910] 
+------------------------------------------------------------------
+Epoch: 10	Time: 273.0067	Loss: 1.8100	LearningRate 0.004987
+------------------------------------------------------------------
+[Ep 11 it 15	 PSNR SIDD: 25.7837	] ----  [best_Ep_SIDD 10 best_it_SIDD 63 Best_PSNR_SIDD 25.7910] 
+[Ep 11 it 31	 PSNR SIDD: 25.7901	] ----  [best_Ep_SIDD 10 best_it_SIDD 63 Best_PSNR_SIDD 25.7910] 
+[Ep 11 it 47	 PSNR SIDD: 25.8015	] ----  [best_Ep_SIDD 11 best_it_SIDD 47 Best_PSNR_SIDD 25.8015] 
+[Ep 11 it 63	 PSNR SIDD: 25.8030	] ----  [best_Ep_SIDD 11 best_it_SIDD 63 Best_PSNR_SIDD 25.8030] 
+------------------------------------------------------------------
+Epoch: 11	Time: 266.5898	Loss: 1.7559	LearningRate 0.004984
+------------------------------------------------------------------
+[Ep 12 it 15	 PSNR SIDD: 25.8029	] ----  [best_Ep_SIDD 11 best_it_SIDD 63 Best_PSNR_SIDD 25.8030] 
+[Ep 12 it 31	 PSNR SIDD: 25.8095	] ----  [best_Ep_SIDD 12 best_it_SIDD 31 Best_PSNR_SIDD 25.8095] 
+[Ep 12 it 47	 PSNR SIDD: 25.8257	] ----  [best_Ep_SIDD 12 best_it_SIDD 47 Best_PSNR_SIDD 25.8257] 
+[Ep 12 it 63	 PSNR SIDD: 25.8131	] ----  [best_Ep_SIDD 12 best_it_SIDD 47 Best_PSNR_SIDD 25.8257] 
+------------------------------------------------------------------
+Epoch: 12	Time: 267.2896	Loss: 1.7656	LearningRate 0.004980
+------------------------------------------------------------------
+[Ep 13 it 15	 PSNR SIDD: 25.8338	] ----  [best_Ep_SIDD 13 best_it_SIDD 15 Best_PSNR_SIDD 25.8338] 
+[Ep 13 it 31	 PSNR SIDD: 25.8190	] ----  [best_Ep_SIDD 13 best_it_SIDD 15 Best_PSNR_SIDD 25.8338] 
+[Ep 13 it 47	 PSNR SIDD: 25.8172	] ----  [best_Ep_SIDD 13 best_it_SIDD 15 Best_PSNR_SIDD 25.8338] 
+[Ep 13 it 63	 PSNR SIDD: 25.8205	] ----  [best_Ep_SIDD 13 best_it_SIDD 15 Best_PSNR_SIDD 25.8338] 
+------------------------------------------------------------------
+Epoch: 13	Time: 265.2531	Loss: 1.7933	LearningRate 0.004976
+------------------------------------------------------------------
+[Ep 14 it 15	 PSNR SIDD: 25.8206	] ----  [best_Ep_SIDD 13 best_it_SIDD 15 Best_PSNR_SIDD 25.8338] 
+[Ep 14 it 31	 PSNR SIDD: 25.8127	] ----  [best_Ep_SIDD 13 best_it_SIDD 15 Best_PSNR_SIDD 25.8338] 
+[Ep 14 it 47	 PSNR SIDD: 25.8536	] ----  [best_Ep_SIDD 14 best_it_SIDD 47 Best_PSNR_SIDD 25.8536] 
+[Ep 14 it 63	 PSNR SIDD: 25.8558	] ----  [best_Ep_SIDD 14 best_it_SIDD 63 Best_PSNR_SIDD 25.8558] 
+------------------------------------------------------------------
+Epoch: 14	Time: 267.9968	Loss: 1.7908	LearningRate 0.004971
+------------------------------------------------------------------
+[Ep 15 it 15	 PSNR SIDD: 25.8663	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 15 it 31	 PSNR SIDD: 25.8659	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 15 it 47	 PSNR SIDD: 25.8011	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 15 it 63	 PSNR SIDD: 23.2181	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 15	Time: 265.6337	Loss: 1.9350	LearningRate 0.004966
+------------------------------------------------------------------
+[Ep 16 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 16 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 16 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 16 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 16	Time: 260.7485	Loss: nan	LearningRate 0.004961
+------------------------------------------------------------------
+[Ep 17 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 17 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 17 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 17 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 17	Time: 260.6280	Loss: nan	LearningRate 0.004955
+------------------------------------------------------------------
+[Ep 18 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 18 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 18 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 18 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 18	Time: 258.7312	Loss: nan	LearningRate 0.004949
+------------------------------------------------------------------
+[Ep 19 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 19 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 19 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 19 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 19	Time: 258.6502	Loss: nan	LearningRate 0.004942
+------------------------------------------------------------------
+[Ep 20 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 20 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 20 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 20 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 20	Time: 260.7577	Loss: nan	LearningRate 0.004935
+------------------------------------------------------------------
+[Ep 21 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 21 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 21 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 21 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 21	Time: 261.1905	Loss: nan	LearningRate 0.004928
+------------------------------------------------------------------
+[Ep 22 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 22 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 22 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 22 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 22	Time: 261.3680	Loss: nan	LearningRate 0.004920
+------------------------------------------------------------------
+[Ep 23 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 23 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 23 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 23 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 23	Time: 259.6734	Loss: nan	LearningRate 0.004912
+------------------------------------------------------------------
+[Ep 24 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 24 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 24 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 24 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 24	Time: 261.5848	Loss: nan	LearningRate 0.004903
+------------------------------------------------------------------
+[Ep 25 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 25 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 25 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 25 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 25	Time: 260.5342	Loss: nan	LearningRate 0.004894
+------------------------------------------------------------------
+[Ep 26 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 26 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 26 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 26 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 26	Time: 259.3033	Loss: nan	LearningRate 0.004885
+------------------------------------------------------------------
+[Ep 27 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 27 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 27 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 27 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 27	Time: 260.0361	Loss: nan	LearningRate 0.004875
+------------------------------------------------------------------
+[Ep 28 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 28 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 28 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 28 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 28	Time: 261.0212	Loss: nan	LearningRate 0.004865
+------------------------------------------------------------------
+[Ep 29 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 29 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 29 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 29 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 29	Time: 233.3626	Loss: nan	LearningRate 0.004854
+------------------------------------------------------------------
+[Ep 30 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 30 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 30 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 30 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 30	Time: 231.6668	Loss: nan	LearningRate 0.004844
+------------------------------------------------------------------
+[Ep 31 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 31 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 31 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 31 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 31	Time: 227.6754	Loss: nan	LearningRate 0.004832
+------------------------------------------------------------------
+[Ep 32 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 32 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 32 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 32 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 32	Time: 226.0131	Loss: nan	LearningRate 0.004821
+------------------------------------------------------------------
+[Ep 33 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 33 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 33 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 33 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 33	Time: 227.2016	Loss: nan	LearningRate 0.004809
+------------------------------------------------------------------
+[Ep 34 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 34 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 34 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 34 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 34	Time: 230.0227	Loss: nan	LearningRate 0.004796
+------------------------------------------------------------------
+[Ep 35 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 35 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 35 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 35 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 35	Time: 225.3302	Loss: nan	LearningRate 0.004783
+------------------------------------------------------------------
+[Ep 36 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 36 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 36 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 36 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 36	Time: 233.0328	Loss: nan	LearningRate 0.004770
+------------------------------------------------------------------
+[Ep 37 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 37 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 37 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 37 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 37	Time: 226.7227	Loss: nan	LearningRate 0.004757
+------------------------------------------------------------------
+[Ep 38 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 38 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 38 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 38 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 38	Time: 229.4923	Loss: nan	LearningRate 0.004743
+------------------------------------------------------------------
+[Ep 39 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 39 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 39 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 39 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 39	Time: 225.1445	Loss: nan	LearningRate 0.004729
+------------------------------------------------------------------
+[Ep 40 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 40 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 40 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 40 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 40	Time: 227.6072	Loss: nan	LearningRate 0.004714
+------------------------------------------------------------------
+[Ep 41 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 41 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 41 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 41 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 41	Time: 232.5538	Loss: nan	LearningRate 0.004699
+------------------------------------------------------------------
+[Ep 42 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 42 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 42 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 42 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 42	Time: 232.7485	Loss: nan	LearningRate 0.004684
+------------------------------------------------------------------
+[Ep 43 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 43 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 43 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 43 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 43	Time: 227.5987	Loss: nan	LearningRate 0.004668
+------------------------------------------------------------------
+[Ep 44 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 44 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 44 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 44 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 44	Time: 228.6494	Loss: nan	LearningRate 0.004652
+------------------------------------------------------------------
+[Ep 45 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 45 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 45 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 45 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 45	Time: 228.6971	Loss: nan	LearningRate 0.004636
+------------------------------------------------------------------
+[Ep 46 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 46 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 46 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 46 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 46	Time: 228.1915	Loss: nan	LearningRate 0.004619
+------------------------------------------------------------------
+[Ep 47 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 47 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 47 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 47 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 47	Time: 229.8098	Loss: nan	LearningRate 0.004602
+------------------------------------------------------------------
+[Ep 48 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 48 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 48 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 48 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 48	Time: 231.7057	Loss: nan	LearningRate 0.004585
+------------------------------------------------------------------
+[Ep 49 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 49 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 49 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 49 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 49	Time: 231.3743	Loss: nan	LearningRate 0.004567
+------------------------------------------------------------------
+[Ep 50 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 50 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 50 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 50 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 50	Time: 226.1414	Loss: nan	LearningRate 0.004549
+------------------------------------------------------------------
+[Ep 51 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 51 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 51 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 51 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 51	Time: 229.5421	Loss: nan	LearningRate 0.004530
+------------------------------------------------------------------
+[Ep 52 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 52 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 52 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 52 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 52	Time: 231.5633	Loss: nan	LearningRate 0.004512
+------------------------------------------------------------------
+[Ep 53 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 53 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 53 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 53 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 53	Time: 231.2310	Loss: nan	LearningRate 0.004493
+------------------------------------------------------------------
+[Ep 54 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 54 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 54 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 54 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 54	Time: 227.0453	Loss: nan	LearningRate 0.004473
+------------------------------------------------------------------
+[Ep 55 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 55 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 55 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 55 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 55	Time: 225.2096	Loss: nan	LearningRate 0.004454
+------------------------------------------------------------------
+[Ep 56 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 56 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 56 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 56 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 56	Time: 226.9225	Loss: nan	LearningRate 0.004434
+------------------------------------------------------------------
+[Ep 57 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 57 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 57 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 57 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 57	Time: 230.9497	Loss: nan	LearningRate 0.004413
+------------------------------------------------------------------
+[Ep 58 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 58 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 58 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 58 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 58	Time: 227.1994	Loss: nan	LearningRate 0.004393
+------------------------------------------------------------------
+[Ep 59 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 59 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 59 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 59 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 59	Time: 225.3243	Loss: nan	LearningRate 0.004372
+------------------------------------------------------------------
+[Ep 60 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 60 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 60 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 60 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 60	Time: 224.6467	Loss: nan	LearningRate 0.004351
+------------------------------------------------------------------
+[Ep 61 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 61 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 61 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 61 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 61	Time: 227.5884	Loss: nan	LearningRate 0.004329
+------------------------------------------------------------------
+[Ep 62 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 62 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 62 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 62 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 62	Time: 227.3637	Loss: nan	LearningRate 0.004307
+------------------------------------------------------------------
+[Ep 63 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 63 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 63 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 63 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 63	Time: 226.5552	Loss: nan	LearningRate 0.004285
+------------------------------------------------------------------
+[Ep 64 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 64 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 64 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 64 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 64	Time: 226.7329	Loss: nan	LearningRate 0.004263
+------------------------------------------------------------------
+[Ep 65 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 65 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 65 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 65 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 65	Time: 226.4926	Loss: nan	LearningRate 0.004240
+------------------------------------------------------------------
+[Ep 66 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 66 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 66 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 66 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 66	Time: 227.6050	Loss: nan	LearningRate 0.004217
+------------------------------------------------------------------
+[Ep 67 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 67 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 67 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 67 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 67	Time: 230.2597	Loss: nan	LearningRate 0.004194
+------------------------------------------------------------------
+[Ep 68 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 68 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 68 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 68 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 68	Time: 230.2910	Loss: nan	LearningRate 0.004170
+------------------------------------------------------------------
+[Ep 69 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 69 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 69 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 69 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 69	Time: 225.0578	Loss: nan	LearningRate 0.004146
+------------------------------------------------------------------
+[Ep 70 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 70 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 70 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 70 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 70	Time: 226.9041	Loss: nan	LearningRate 0.004122
+------------------------------------------------------------------
+[Ep 71 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 71 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 71 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 71 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 71	Time: 226.7695	Loss: nan	LearningRate 0.004098
+------------------------------------------------------------------
+[Ep 72 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 72 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 72 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 72 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 72	Time: 223.5459	Loss: nan	LearningRate 0.004073
+------------------------------------------------------------------
+[Ep 73 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 73 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 73 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 73 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 73	Time: 231.5159	Loss: nan	LearningRate 0.004049
+------------------------------------------------------------------
+[Ep 74 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 74 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 74 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 74 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 74	Time: 229.5314	Loss: nan	LearningRate 0.004024
+------------------------------------------------------------------
+[Ep 75 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 75 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 75 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 75 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 75	Time: 226.5825	Loss: nan	LearningRate 0.003998
+------------------------------------------------------------------
+[Ep 76 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 76 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 76 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 76 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 76	Time: 227.2405	Loss: nan	LearningRate 0.003973
+------------------------------------------------------------------
+[Ep 77 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 77 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 77 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 77 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 77	Time: 227.3849	Loss: nan	LearningRate 0.003947
+------------------------------------------------------------------
+[Ep 78 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 78 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 78 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 78 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 78	Time: 226.7034	Loss: nan	LearningRate 0.003921
+------------------------------------------------------------------
+[Ep 79 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 79 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 79 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 79 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 79	Time: 228.4224	Loss: nan	LearningRate 0.003895
+------------------------------------------------------------------
+[Ep 80 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 80 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 80 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 80 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 80	Time: 226.7080	Loss: nan	LearningRate 0.003868
+------------------------------------------------------------------
+[Ep 81 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 81 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 81 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 81 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 81	Time: 226.3035	Loss: nan	LearningRate 0.003841
+------------------------------------------------------------------
+[Ep 82 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 82 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 82 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 82 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 82	Time: 227.0262	Loss: nan	LearningRate 0.003814
+------------------------------------------------------------------
+[Ep 83 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 83 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 83 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 83 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 83	Time: 227.3885	Loss: nan	LearningRate 0.003787
+------------------------------------------------------------------
+[Ep 84 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 84 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 84 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 84 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 84	Time: 226.4126	Loss: nan	LearningRate 0.003760
+------------------------------------------------------------------
+[Ep 85 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 85 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 85 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 85 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 85	Time: 226.4910	Loss: nan	LearningRate 0.003732
+------------------------------------------------------------------
+[Ep 86 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 86 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 86 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 86 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 86	Time: 226.7197	Loss: nan	LearningRate 0.003704
+------------------------------------------------------------------
+[Ep 87 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 87 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 87 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 87 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 87	Time: 227.4459	Loss: nan	LearningRate 0.003677
+------------------------------------------------------------------
+[Ep 88 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 88 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 88 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 88 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 88	Time: 228.3188	Loss: nan	LearningRate 0.003648
+------------------------------------------------------------------
+[Ep 89 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 89 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 89 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 89 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 89	Time: 227.2153	Loss: nan	LearningRate 0.003620
+------------------------------------------------------------------
+[Ep 90 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 90 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 90 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 90 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 90	Time: 222.8347	Loss: nan	LearningRate 0.003592
+------------------------------------------------------------------
+[Ep 91 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 91 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 91 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 91 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 91	Time: 226.7913	Loss: nan	LearningRate 0.003563
+------------------------------------------------------------------
+[Ep 92 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 92 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 92 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 92 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 92	Time: 227.3691	Loss: nan	LearningRate 0.003534
+------------------------------------------------------------------
+[Ep 93 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 93 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 93 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 93 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 93	Time: 229.7481	Loss: nan	LearningRate 0.003505
+------------------------------------------------------------------
+[Ep 94 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 94 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 94 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 94 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 94	Time: 228.0405	Loss: nan	LearningRate 0.003476
+------------------------------------------------------------------
+[Ep 95 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 95 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 95 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 95 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 95	Time: 226.0751	Loss: nan	LearningRate 0.003446
+------------------------------------------------------------------
+[Ep 96 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 96 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 96 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 96 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 96	Time: 230.6547	Loss: nan	LearningRate 0.003417
+------------------------------------------------------------------
+[Ep 97 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 97 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 97 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 97 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 97	Time: 230.4225	Loss: nan	LearningRate 0.003387
+------------------------------------------------------------------
+[Ep 98 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 98 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 98 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 98 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 98	Time: 227.8744	Loss: nan	LearningRate 0.003357
+------------------------------------------------------------------
+[Ep 99 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 99 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 99 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 99 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 99	Time: 227.5318	Loss: nan	LearningRate 0.003328
+------------------------------------------------------------------
+[Ep 100 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 100 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 100 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 100 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 100	Time: 226.5302	Loss: nan	LearningRate 0.003297
+------------------------------------------------------------------
+[Ep 101 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 101 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 101 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 101 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 101	Time: 226.6560	Loss: nan	LearningRate 0.003267
+------------------------------------------------------------------
+[Ep 102 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 102 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 102 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 102 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 102	Time: 225.7697	Loss: nan	LearningRate 0.003237
+------------------------------------------------------------------
+[Ep 103 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 103 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 103 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 103 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 103	Time: 225.9749	Loss: nan	LearningRate 0.003206
+------------------------------------------------------------------
+[Ep 104 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 104 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 104 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 104 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 104	Time: 226.7516	Loss: nan	LearningRate 0.003176
+------------------------------------------------------------------
+[Ep 105 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 105 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 105 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 105 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 105	Time: 226.3197	Loss: nan	LearningRate 0.003145
+------------------------------------------------------------------
+[Ep 106 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 106 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 106 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 106 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 106	Time: 227.6787	Loss: nan	LearningRate 0.003114
+------------------------------------------------------------------
+[Ep 107 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 107 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 107 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 107 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 107	Time: 226.7657	Loss: nan	LearningRate 0.003084
+------------------------------------------------------------------
+[Ep 108 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 108 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 108 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 108 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 108	Time: 225.9936	Loss: nan	LearningRate 0.003053
+------------------------------------------------------------------
+[Ep 109 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 109 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 109 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 109 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 109	Time: 224.5236	Loss: nan	LearningRate 0.003022
+------------------------------------------------------------------
+[Ep 110 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 110 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 110 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 110 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 110	Time: 225.2564	Loss: nan	LearningRate 0.002990
+------------------------------------------------------------------
+[Ep 111 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 111 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 111 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 111 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 111	Time: 227.2293	Loss: nan	LearningRate 0.002959
+------------------------------------------------------------------
+[Ep 112 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 112 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 112 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 112 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 112	Time: 226.7878	Loss: nan	LearningRate 0.002928
+------------------------------------------------------------------
+[Ep 113 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 113 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 113 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 113 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 113	Time: 227.8942	Loss: nan	LearningRate 0.002897
+------------------------------------------------------------------
+[Ep 114 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 114 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 114 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 114 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 114	Time: 226.6195	Loss: nan	LearningRate 0.002865
+------------------------------------------------------------------
+[Ep 115 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 115 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 115 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 115 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 115	Time: 227.7255	Loss: nan	LearningRate 0.002834
+------------------------------------------------------------------
+[Ep 116 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 116 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 116 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 116 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 116	Time: 227.6088	Loss: nan	LearningRate 0.002802
+------------------------------------------------------------------
+[Ep 117 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 117 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 117 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 117 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 117	Time: 226.2998	Loss: nan	LearningRate 0.002771
+------------------------------------------------------------------
+[Ep 118 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 118 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 118 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 118 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 118	Time: 228.7960	Loss: nan	LearningRate 0.002739
+------------------------------------------------------------------
+[Ep 119 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 119 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 119 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 119 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 119	Time: 231.3078	Loss: nan	LearningRate 0.002707
+------------------------------------------------------------------
+[Ep 120 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 120 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 120 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 120 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 120	Time: 224.1717	Loss: nan	LearningRate 0.002676
+------------------------------------------------------------------
+[Ep 121 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 121 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 121 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 121 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 121	Time: 226.8844	Loss: nan	LearningRate 0.002644
+------------------------------------------------------------------
+[Ep 122 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 122 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 122 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 122 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 122	Time: 229.9472	Loss: nan	LearningRate 0.002612
+------------------------------------------------------------------
+[Ep 123 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 123 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 123 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 123 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 123	Time: 228.9828	Loss: nan	LearningRate 0.002580
+------------------------------------------------------------------
+[Ep 124 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 124 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 124 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 124 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 124	Time: 223.9413	Loss: nan	LearningRate 0.002549
+------------------------------------------------------------------
+[Ep 125 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 125 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 125 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 125 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 125	Time: 224.6134	Loss: nan	LearningRate 0.002517
+------------------------------------------------------------------
+[Ep 126 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 126 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 126 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 126 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 126	Time: 228.1875	Loss: nan	LearningRate 0.002485
+------------------------------------------------------------------
+[Ep 127 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 127 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 127 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 127 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 127	Time: 232.1843	Loss: nan	LearningRate 0.002453
+------------------------------------------------------------------
+[Ep 128 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 128 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 128 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 128 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 128	Time: 227.6538	Loss: nan	LearningRate 0.002421
+------------------------------------------------------------------
+[Ep 129 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 129 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 129 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 129 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 129	Time: 223.5005	Loss: nan	LearningRate 0.002390
+------------------------------------------------------------------
+[Ep 130 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 130 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 130 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 130 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 130	Time: 228.3583	Loss: nan	LearningRate 0.002358
+------------------------------------------------------------------
+[Ep 131 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 131 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 131 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 131 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 131	Time: 226.2970	Loss: nan	LearningRate 0.002326
+------------------------------------------------------------------
+[Ep 132 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 132 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 132 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 132 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 132	Time: 226.6223	Loss: nan	LearningRate 0.002294
+------------------------------------------------------------------
+[Ep 133 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 133 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 133 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 133 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 133	Time: 227.6045	Loss: nan	LearningRate 0.002263
+------------------------------------------------------------------
+[Ep 134 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 134 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 134 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 134 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 134	Time: 227.4217	Loss: nan	LearningRate 0.002231
+------------------------------------------------------------------
+[Ep 135 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 135 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 135 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 135 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 135	Time: 227.6873	Loss: nan	LearningRate 0.002200
+------------------------------------------------------------------
+[Ep 136 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 136 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 136 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 136 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 136	Time: 225.4632	Loss: nan	LearningRate 0.002168
+------------------------------------------------------------------
+[Ep 137 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 137 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 137 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 137 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 137	Time: 227.4996	Loss: nan	LearningRate 0.002137
+------------------------------------------------------------------
+[Ep 138 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 138 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 138 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 138 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 138	Time: 226.8284	Loss: nan	LearningRate 0.002105
+------------------------------------------------------------------
+[Ep 139 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 139 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 139 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 139 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 139	Time: 226.7326	Loss: nan	LearningRate 0.002074
+------------------------------------------------------------------
+[Ep 140 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 140 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 140 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 140 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 140	Time: 224.4379	Loss: nan	LearningRate 0.002043
+------------------------------------------------------------------
+[Ep 141 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 141 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 141 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 141 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 141	Time: 226.5538	Loss: nan	LearningRate 0.002011
+------------------------------------------------------------------
+[Ep 142 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 142 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 142 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 142 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 142	Time: 226.3580	Loss: nan	LearningRate 0.001980
+------------------------------------------------------------------
+[Ep 143 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 143 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 143 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 143 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 143	Time: 225.1333	Loss: nan	LearningRate 0.001949
+------------------------------------------------------------------
+[Ep 144 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 144 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 144 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 144 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 144	Time: 230.4142	Loss: nan	LearningRate 0.001918
+------------------------------------------------------------------
+[Ep 145 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 145 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 145 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 145 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 145	Time: 227.2420	Loss: nan	LearningRate 0.001887
+------------------------------------------------------------------
+[Ep 146 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 146 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 146 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 146 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 146	Time: 226.7548	Loss: nan	LearningRate 0.001857
+------------------------------------------------------------------
+[Ep 147 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 147 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 147 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 147 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 147	Time: 223.9066	Loss: nan	LearningRate 0.001826
+------------------------------------------------------------------
+[Ep 148 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 148 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 148 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 148 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 148	Time: 224.7746	Loss: nan	LearningRate 0.001795
+------------------------------------------------------------------
+[Ep 149 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 149 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 149 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 149 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 149	Time: 225.1722	Loss: nan	LearningRate 0.001765
+------------------------------------------------------------------
+[Ep 150 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 150 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 150 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 150 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 150	Time: 226.8018	Loss: nan	LearningRate 0.001735
+------------------------------------------------------------------
+[Ep 151 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 151 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 151 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 151 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 151	Time: 228.3556	Loss: nan	LearningRate 0.001704
+------------------------------------------------------------------
+[Ep 152 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 152 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 152 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 152 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 152	Time: 229.8061	Loss: nan	LearningRate 0.001674
+------------------------------------------------------------------
+[Ep 153 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 153 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 153 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 153 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 153	Time: 225.4166	Loss: nan	LearningRate 0.001644
+------------------------------------------------------------------
+[Ep 154 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 154 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 154 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 154 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 154	Time: 225.2109	Loss: nan	LearningRate 0.001615
+------------------------------------------------------------------
+[Ep 155 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 155 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 155 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 155 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 155	Time: 224.4355	Loss: nan	LearningRate 0.001585
+------------------------------------------------------------------
+[Ep 156 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 156 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 156 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 156 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 156	Time: 226.2261	Loss: nan	LearningRate 0.001555
+------------------------------------------------------------------
+[Ep 157 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 157 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 157 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 157 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 157	Time: 227.9267	Loss: nan	LearningRate 0.001526
+------------------------------------------------------------------
+[Ep 158 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 158 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 158 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 158 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 158	Time: 226.6725	Loss: nan	LearningRate 0.001497
+------------------------------------------------------------------
+[Ep 159 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 159 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 159 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 159 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 159	Time: 225.0008	Loss: nan	LearningRate 0.001468
+------------------------------------------------------------------
+[Ep 160 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 160 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 160 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 160 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 160	Time: 228.7614	Loss: nan	LearningRate 0.001439
+------------------------------------------------------------------
+[Ep 161 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 161 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 161 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 161 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 161	Time: 227.8794	Loss: nan	LearningRate 0.001410
+------------------------------------------------------------------
+[Ep 162 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 162 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 162 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 162 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 162	Time: 225.0261	Loss: nan	LearningRate 0.001382
+------------------------------------------------------------------
+[Ep 163 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 163 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 163 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 163 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 163	Time: 222.9366	Loss: nan	LearningRate 0.001353
+------------------------------------------------------------------
+[Ep 164 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 164 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 164 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 164 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 164	Time: 224.7225	Loss: nan	LearningRate 0.001325
+------------------------------------------------------------------
+[Ep 165 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 165 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 165 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 165 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 165	Time: 228.3710	Loss: nan	LearningRate 0.001297
+------------------------------------------------------------------
+[Ep 166 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 166 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 166 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 166 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 166	Time: 226.2616	Loss: nan	LearningRate 0.001270
+------------------------------------------------------------------
+[Ep 167 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 167 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 167 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 167 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 167	Time: 226.1828	Loss: nan	LearningRate 0.001242
+------------------------------------------------------------------
+[Ep 168 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 168 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 168 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 168 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 168	Time: 224.0092	Loss: nan	LearningRate 0.001215
+------------------------------------------------------------------
+[Ep 169 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 169 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 169 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 169 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 169	Time: 226.1629	Loss: nan	LearningRate 0.001187
+------------------------------------------------------------------
+[Ep 170 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 170 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 170 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 170 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 170	Time: 228.0243	Loss: nan	LearningRate 0.001161
+------------------------------------------------------------------
+[Ep 171 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 171 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 171 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 171 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 171	Time: 224.7655	Loss: nan	LearningRate 0.001134
+------------------------------------------------------------------
+[Ep 172 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 172 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 172 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 172 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 172	Time: 224.6386	Loss: nan	LearningRate 0.001107
+------------------------------------------------------------------
+[Ep 173 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 173 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 173 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 173 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 173	Time: 223.5571	Loss: nan	LearningRate 0.001081
+------------------------------------------------------------------
+[Ep 174 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 174 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 174 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 174 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 174	Time: 226.2326	Loss: nan	LearningRate 0.001055
+------------------------------------------------------------------
+[Ep 175 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 175 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 175 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 175 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 175	Time: 227.8982	Loss: nan	LearningRate 0.001029
+------------------------------------------------------------------
+[Ep 176 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 176 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 176 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 176 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 176	Time: 231.2377	Loss: nan	LearningRate 0.001004
+------------------------------------------------------------------
+[Ep 177 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 177 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 177 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 177 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 177	Time: 229.7530	Loss: nan	LearningRate 0.000978
+------------------------------------------------------------------
+[Ep 178 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 178 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 178 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 178 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 178	Time: 228.8597	Loss: nan	LearningRate 0.000953
+------------------------------------------------------------------
+[Ep 179 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 179 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 179 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 179 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 179	Time: 226.9995	Loss: nan	LearningRate 0.000928
+------------------------------------------------------------------
+[Ep 180 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 180 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 180 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 180 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 180	Time: 224.4852	Loss: nan	LearningRate 0.000904
+------------------------------------------------------------------
+[Ep 181 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 181 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 181 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 181 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 181	Time: 225.6502	Loss: nan	LearningRate 0.000879
+------------------------------------------------------------------
+[Ep 182 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 182 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 182 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 182 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 182	Time: 223.2887	Loss: nan	LearningRate 0.000855
+------------------------------------------------------------------
+[Ep 183 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 183 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 183 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 183 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 183	Time: 228.9948	Loss: nan	LearningRate 0.000832
+------------------------------------------------------------------
+[Ep 184 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 184 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 184 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 184 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 184	Time: 229.7512	Loss: nan	LearningRate 0.000808
+------------------------------------------------------------------
+[Ep 185 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 185 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 185 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 185 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 185	Time: 229.5140	Loss: nan	LearningRate 0.000785
+------------------------------------------------------------------
+[Ep 186 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 186 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 186 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 186 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 186	Time: 228.7586	Loss: nan	LearningRate 0.000762
+------------------------------------------------------------------
+[Ep 187 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 187 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 187 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 187 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 187	Time: 225.5907	Loss: nan	LearningRate 0.000739
+------------------------------------------------------------------
+[Ep 188 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 188 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 188 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 188 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 188	Time: 230.4262	Loss: nan	LearningRate 0.000717
+------------------------------------------------------------------
+[Ep 189 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 189 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 189 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 189 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 189	Time: 225.4452	Loss: nan	LearningRate 0.000695
+------------------------------------------------------------------
+[Ep 190 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 190 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 190 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 190 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 190	Time: 226.3803	Loss: nan	LearningRate 0.000673
+------------------------------------------------------------------
+[Ep 191 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 191 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 191 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 191 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 191	Time: 226.5617	Loss: nan	LearningRate 0.000651
+------------------------------------------------------------------
+[Ep 192 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 192 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 192 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 192 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 192	Time: 229.1192	Loss: nan	LearningRate 0.000630
+------------------------------------------------------------------
+[Ep 193 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 193 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 193 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 193 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 193	Time: 222.8939	Loss: nan	LearningRate 0.000609
+------------------------------------------------------------------
+[Ep 194 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 194 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 194 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 194 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 194	Time: 227.3877	Loss: nan	LearningRate 0.000588
+------------------------------------------------------------------
+[Ep 195 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 195 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 195 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 195 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 195	Time: 226.6126	Loss: nan	LearningRate 0.000568
+------------------------------------------------------------------
+[Ep 196 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 196 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 196 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 196 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 196	Time: 225.2878	Loss: nan	LearningRate 0.000548
+------------------------------------------------------------------
+[Ep 197 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 197 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 197 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 197 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 197	Time: 228.4148	Loss: nan	LearningRate 0.000528
+------------------------------------------------------------------
+[Ep 198 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 198 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 198 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 198 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 198	Time: 226.5087	Loss: nan	LearningRate 0.000509
+------------------------------------------------------------------
+[Ep 199 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 199 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 199 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 199 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 199	Time: 229.9308	Loss: nan	LearningRate 0.000490
+------------------------------------------------------------------
+[Ep 200 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 200 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 200 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 200 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 200	Time: 229.6489	Loss: nan	LearningRate 0.000471
+------------------------------------------------------------------
+[Ep 201 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 201 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 201 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 201 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 201	Time: 225.5755	Loss: nan	LearningRate 0.000453
+------------------------------------------------------------------
+[Ep 202 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 202 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 202 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 202 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 202	Time: 225.4406	Loss: nan	LearningRate 0.000435
+------------------------------------------------------------------
+[Ep 203 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 203 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 203 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 203 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 203	Time: 226.2196	Loss: nan	LearningRate 0.000417
+------------------------------------------------------------------
+[Ep 204 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 204 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 204 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 204 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 204	Time: 228.7030	Loss: nan	LearningRate 0.000400
+------------------------------------------------------------------
+[Ep 205 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 205 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 205 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 205 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 205	Time: 228.7668	Loss: nan	LearningRate 0.000383
+------------------------------------------------------------------
+[Ep 206 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 206 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 206 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 206 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 206	Time: 225.5720	Loss: nan	LearningRate 0.000366
+------------------------------------------------------------------
+[Ep 207 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 207 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 207 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 207 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 207	Time: 227.1394	Loss: nan	LearningRate 0.000350
+------------------------------------------------------------------
+[Ep 208 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 208 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 208 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 208 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 208	Time: 228.3175	Loss: nan	LearningRate 0.000334
+------------------------------------------------------------------
+[Ep 209 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 209 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 209 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 209 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 209	Time: 224.7599	Loss: nan	LearningRate 0.000318
+------------------------------------------------------------------
+[Ep 210 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 210 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 210 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 210 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 210	Time: 223.3702	Loss: nan	LearningRate 0.000303
+------------------------------------------------------------------
+[Ep 211 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 211 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 211 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 211 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 211	Time: 226.7109	Loss: nan	LearningRate 0.000288
+------------------------------------------------------------------
+[Ep 212 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 212 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 212 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 212 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 212	Time: 227.4543	Loss: nan	LearningRate 0.000273
+------------------------------------------------------------------
+[Ep 213 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 213 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 213 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 213 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 213	Time: 229.0216	Loss: nan	LearningRate 0.000259
+------------------------------------------------------------------
+[Ep 214 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 214 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 214 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 214 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 214	Time: 226.3763	Loss: nan	LearningRate 0.000245
+------------------------------------------------------------------
+[Ep 215 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 215 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 215 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 215 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 215	Time: 227.9880	Loss: nan	LearningRate 0.000231
+------------------------------------------------------------------
+[Ep 216 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 216 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 216 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 216 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 216	Time: 227.1032	Loss: nan	LearningRate 0.000218
+------------------------------------------------------------------
+[Ep 217 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 217 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 217 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 217 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 217	Time: 225.5922	Loss: nan	LearningRate 0.000206
+------------------------------------------------------------------
+[Ep 218 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 218 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 218 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 218 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 218	Time: 227.8518	Loss: nan	LearningRate 0.000193
+------------------------------------------------------------------
+[Ep 219 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 219 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 219 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 219 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 219	Time: 224.8572	Loss: nan	LearningRate 0.000181
+------------------------------------------------------------------
+[Ep 220 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 220 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 220 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 220 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 220	Time: 226.8067	Loss: nan	LearningRate 0.000169
+------------------------------------------------------------------
+[Ep 221 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 221 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 221 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 221 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 221	Time: 226.5365	Loss: nan	LearningRate 0.000158
+------------------------------------------------------------------
+[Ep 222 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 222 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 222 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 222 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 222	Time: 224.7112	Loss: nan	LearningRate 0.000147
+------------------------------------------------------------------
+[Ep 223 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 223 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 223 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 223 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 223	Time: 226.2885	Loss: nan	LearningRate 0.000137
+------------------------------------------------------------------
+[Ep 224 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 224 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 224 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 224 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 224	Time: 224.5206	Loss: nan	LearningRate 0.000127
+------------------------------------------------------------------
+[Ep 225 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 225 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 225 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 225 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 225	Time: 224.7652	Loss: nan	LearningRate 0.000117
+------------------------------------------------------------------
+[Ep 226 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 226 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 226 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 226 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 226	Time: 227.0737	Loss: nan	LearningRate 0.000108
+------------------------------------------------------------------
+[Ep 227 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 227 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 227 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 227 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 227	Time: 228.5344	Loss: nan	LearningRate 0.000099
+------------------------------------------------------------------
+[Ep 228 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 228 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 228 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 228 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 228	Time: 224.8571	Loss: nan	LearningRate 0.000090
+------------------------------------------------------------------
+[Ep 229 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 229 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 229 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 229 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 229	Time: 226.2331	Loss: nan	LearningRate 0.000082
+------------------------------------------------------------------
+[Ep 230 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 230 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 230 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 230 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 230	Time: 227.6650	Loss: nan	LearningRate 0.000074
+------------------------------------------------------------------
+[Ep 231 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 231 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 231 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 231 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 231	Time: 230.1153	Loss: nan	LearningRate 0.000067
+------------------------------------------------------------------
+[Ep 232 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 232 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 232 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 232 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 232	Time: 225.1244	Loss: nan	LearningRate 0.000060
+------------------------------------------------------------------
+[Ep 233 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 233 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 233 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 233 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 233	Time: 227.6994	Loss: nan	LearningRate 0.000053
+------------------------------------------------------------------
+[Ep 234 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 234 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 234 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 234 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 234	Time: 225.9649	Loss: nan	LearningRate 0.000047
+------------------------------------------------------------------
+[Ep 235 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 235 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 235 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 235 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 235	Time: 226.3374	Loss: nan	LearningRate 0.000041
+------------------------------------------------------------------
+[Ep 236 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 236 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 236 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 236 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 236	Time: 227.2318	Loss: nan	LearningRate 0.000035
+------------------------------------------------------------------
+[Ep 237 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 237 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 237 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 237 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 237	Time: 225.1996	Loss: nan	LearningRate 0.000030
+------------------------------------------------------------------
+[Ep 238 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 238 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 238 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 238 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 238	Time: 226.8681	Loss: nan	LearningRate 0.000026
+------------------------------------------------------------------
+[Ep 239 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 239 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 239 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 239 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 239	Time: 226.0899	Loss: nan	LearningRate 0.000022
+------------------------------------------------------------------
+[Ep 240 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 240 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 240 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 240 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 240	Time: 228.2075	Loss: nan	LearningRate 0.000018
+------------------------------------------------------------------
+[Ep 241 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 241 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 241 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 241 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 241	Time: 230.0964	Loss: nan	LearningRate 0.000014
+------------------------------------------------------------------
+[Ep 242 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 242 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 242 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 242 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 242	Time: 227.2952	Loss: nan	LearningRate 0.000011
+------------------------------------------------------------------
+[Ep 243 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 243 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 243 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 243 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 243	Time: 223.6428	Loss: nan	LearningRate 0.000009
+------------------------------------------------------------------
+[Ep 244 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 244 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 244 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 244 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 244	Time: 230.6272	Loss: nan	LearningRate 0.000006
+------------------------------------------------------------------
+[Ep 245 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 245 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 245 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 245 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 245	Time: 225.7712	Loss: nan	LearningRate 0.000005
+------------------------------------------------------------------
+[Ep 246 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 246 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 246 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 246 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 246	Time: 228.9256	Loss: nan	LearningRate 0.000003
+------------------------------------------------------------------
+[Ep 247 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 247 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 247 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 247 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 247	Time: 225.6837	Loss: nan	LearningRate 0.000002
+------------------------------------------------------------------
+[Ep 248 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 248 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 248 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 248 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 248	Time: 226.5990	Loss: nan	LearningRate 0.000001
+------------------------------------------------------------------
+[Ep 249 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 249 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 249 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 249 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 249	Time: 227.3028	Loss: nan	LearningRate 0.000001
+------------------------------------------------------------------
+[Ep 250 it 15	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 250 it 31	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 250 it 47	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+[Ep 250 it 63	 PSNR SIDD: nan	] ----  [best_Ep_SIDD 15 best_it_SIDD 15 Best_PSNR_SIDD 25.8663] 
+------------------------------------------------------------------
+Epoch: 250	Time: 226.6429	Loss: nan	LearningRate 0.000001
+------------------------------------------------------------------
+Now time is :  2022-02-05T13:45:55.824738
