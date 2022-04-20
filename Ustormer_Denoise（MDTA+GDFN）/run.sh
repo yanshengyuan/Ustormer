@@ -1,0 +1,1 @@
+python3 ./train.py --arch Uformer --gpu '0,2,4'     --train_ps 128 --train_dir ../sidd/train --env 32_0705_1     --val_dir ../sidd/val --embed_dim 32 --warmup --batch_size 32 --lr_initial 0.0002
