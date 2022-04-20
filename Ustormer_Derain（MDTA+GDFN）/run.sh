@@ -1,0 +1,5 @@
+ python ./test.py --arch Uformer --batch_size 1 --gpu '4' --input_dir ../5Deraining/Test1200 --result_dir ./results --weights ./log/Uformer32_0705_1/models/model_epoch_50.pth --embed_dim 32
+ python ./test.py --arch Uformer --batch_size 1 --gpu '4' --input_dir ../5Deraining/Test1200 --result_dir ./results --weights ./log/Uformer32_0705_1/models/model_epoch_100.pth --embed_dim 32
+ python ./test.py --arch Uformer --batch_size 1 --gpu '4' --input_dir ../5Deraining/Test1200 --result_dir ./results --weights ./log/Uformer32_0705_1/models/model_epoch_150.pth --embed_dim 32
+ python ./test.py --arch Uformer --batch_size 1 --gpu '4' --input_dir ../5Deraining/Test1200 --result_dir ./results --weights ./log/Uformer32_0705_1/models/model_epoch_200.pth --embed_dim 32
+ python ./test.py --arch Uformer --batch_size 1 --gpu '4' --input_dir ../5Deraining/Test1200 --result_dir ./results --weights ./log/Uformer32_0705_1/models/model_epoch_250.pth --embed_dim 32
