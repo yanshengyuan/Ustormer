@@ -3,7 +3,7 @@ The AI Algorithm Proposed by The Master's Degree Thesis of Shengyuan Yan of Wuha
 
 Illustrations for the use of this repository:
 
-1, data preparation
+1, data preparation\n
 First download SIDD dataset for training on SIDD's official site. You will get a ZIP pack. Unzip all the files and preprocess the SIDD_Medium_sRGB with generate_patches.py to generate patches as the training images for Ustormer_Denoise, the recommended command is in below:
 cat SIDD_Medium_Srgb_Parts.z* > combined.zip
 unzip combined.zip
