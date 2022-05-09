@@ -3,12 +3,18 @@ The AI Algorithm Proposed by The Master's Degree Thesis of Shengyuan Yan of Wuha
 
 Illustrations for the use of this repository:
 
-1, data preparation\n
+1, data preparation
+
 First download SIDD dataset for training on SIDD's official site. You will get a ZIP pack. Unzip all the files and preprocess the SIDD_Medium_sRGB with generate_patches.py to generate patches as the training images for Ustormer_Denoise, the recommended command is in below:
+
 cat SIDD_Medium_Srgb_Parts.z* > combined.zip
+
 unzip combined.zip
+
 unzip val.zip
+
 python3 generate_patches_SIDD.py --src_dir ../sidd/SIDD_Medium_Srgb/Data --tar_dir ../sidd/train
+
 
 For the training of Ustormer_Derain, download Rain14000 dataset from official site. For the training of Ustormer_Deblur, download GoPro dataset from official site.
 
