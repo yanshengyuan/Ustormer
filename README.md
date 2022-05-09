@@ -46,7 +46,7 @@ https://github.com/swz30/Restormer
 
 5, copyright
 
-As far as Chinese Master's Degree's academic regulations and the confidential level of my graduation research, this repo, the pytorch implementation of Ustormer can be public and open-source.
+As far as Chinese Master's Degree's academic regulations and the confidential level of my graduation research is concerned, this repo, the pytorch implementation of Ustormer can be public and open-source.
 
 If you want to use this repo for any academic or commercial purpose or if you have any questions to ask me please contact me in shengyuan_yan@163.com and for academic references please cite Ustormer as followings:
 
