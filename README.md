@@ -27,6 +27,7 @@ python3 ./train.py --arch Uformer --gpu '0,2,4'     --train_ps 128 --train_dir .
 And similar commands for Ustormer_Derain as well as Ustormer_Deblur. You only need to change the path in --train_dir and --val_dir
 
 3, test and pretrained models
+
  My originally pretrained weights will not be supplied here. When you have finished your own training, use your .pth files and the test.py scripts in 3 branches of this repo respectively. Here we take Ustormer_Derain for example:
  
 python ./test.py --arch Uformer --batch_size 1 --gpu '4' --input_dir ../5Deraining/Test1200 --result_dir ./results --weights ./log/Uformer32_0705_1/models/model_epoch_250.pth --embed_dim 32
