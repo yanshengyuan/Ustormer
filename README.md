@@ -50,6 +50,6 @@ As far as Chinese Master's Degree's academic regulations and the confidential le
 
 If you want to use this repo for any academic or commercial purpose or if you have any questions to ask me please contact me in shengyuan_yan@163.com and for academic references please cite Ustormer as followings:
 
-Shengyuan Yan, Research on an Image Restoration Method based on Window-based Channel-wise Local Self-attention Mechanism[M]. Wuhan University, China, 2022.
+Shengyuan Yan. Research on an Image Restoration Method based on Window-based Channel-wise Local Self-attention Mechanism[M]. Wuhan University, China, 2022.
 
 Thanks for your attention and starring
